@@ -8,7 +8,6 @@ services:
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
-    envVars:
-      - key: USER_ID
-        # value: 494374
-        sync: false
+    key: USER_ID
+    # value: 494374
+    sync: false
