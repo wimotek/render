@@ -3,11 +3,14 @@ services:
   - type: web
     name: proxylite
     env: docker
+    runtime: image
+    
     image: 
         url: docker.io/proxylite/proxyservice  # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
-    key: USER_ID
-    # value: 494374
-    sync: false
+    envVars:
+     - key: USER_ID
+       value: 494374
+       #sync: false
