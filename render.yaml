@@ -10,7 +10,9 @@ services:
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
-    envVars:
+    envVars: 
+     - key: PORT
+        value: 80
      - key: USER_ID
        value: 494374
        #sync: false
